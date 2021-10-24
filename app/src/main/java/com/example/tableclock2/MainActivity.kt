@@ -1,9 +1,9 @@
 package com.example.tableclock2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.tableclock2.databinding.ActivityMainBinding
 
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         //This Code of line doesn't let screen to get off.
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
         // Hide the status bar.
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
@@ -23,6 +23,11 @@ class MainActivity : AppCompatActivity() {
         // status bar is hidden, so hide that too if necessary.
         actionBar?.hide()
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+
+
+
+
 
         val quotes = mutableListOf<String>(
             "Hustle",
@@ -41,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             "Imagine the Dream with relaxed/peaceful mind.",
             "Meditate to have a peaceful mind.",
             "Meditate to have a Lake like Mind, free of waves",
-            "feel serenity",
+            "Feel serenity",
             "Purpose of Life: Live, Laugh, Leave",
             "Live Life, just don't live",
             "Work keeps your soul young.",
