@@ -13,6 +13,125 @@
         android:background="#333"
         tools:context=".settingsactivity.settings.SettingsFragment">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended Colours"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textClock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/bAndWTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B&amp;W(Default)"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textClock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.111" />
+
+        <TextView
+            android:id="@+id/wAndBTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W&amp;B"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textClock"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/bAndWTextView"
+            app:layout_constraintVertical_bias="0.183" />
+
+        <TextView
+            android:id="@+id/grayScaleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GrayScale"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textClock"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/wAndBTextView"
+            app:layout_constraintVertical_bias="0.255" />
+
+        <TextView
+            android:id="@+id/greenColorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green Colour Scheme"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textClock"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/grayScaleTextView"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <Button
+            android:id="@+id/bandWButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apply"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/bAndWTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toEndOf="@+id/bAndWTextView"
+            app:layout_constraintTop_toTopOf="@+id/bAndWTextView"
+            app:layout_constraintVertical_bias="0.428" />
+
+
+        <Button
+            android:id="@+id/wandBButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apply"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/wAndBTextView"
+            app:layout_constraintEnd_toEndOf="@+id/bandWButton"
+            app:layout_constraintStart_toStartOf="@+id/bandWButton"
+            app:layout_constraintTop_toTopOf="@+id/wAndBTextView" />
+
+        <Button
+            android:id="@+id/grayScaleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="48dp"
+            android:text="apply"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/greenColourButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/grayScaleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/bandWButton"
+            app:layout_constraintVertical_bias="0.634" />
+
+        <Button
+            android:id="@+id/greenColourButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apply"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/greenColorTextView"
+            app:layout_constraintEnd_toEndOf="@+id/bandWButton"
+            app:layout_constraintStart_toStartOf="@+id/bandWButton"
+            app:layout_constraintTop_toTopOf="@+id/greenColorTextView"
+            app:layout_constraintVertical_bias="0.428" />
+
         <TextClock
             android:id="@+id/textClock"
             android:layout_width="match_parent"
